@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(gobject-2.0)
 BuildRequires:  gobject-introspection
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  girepository-devel
-BuildRequires:  pkgconfig(valac)
+BuildRequires:  vala
 
 %if %{without bootstrap}
 Requires:       astal-libs%{?_isa}
