@@ -9,7 +9,7 @@
 
 Name:       astal-4
 Version:    1~%{bumpver}.git%{astal_shortcommit}
-Release:    1
+Release:    2
 Source0:    https://github.com/aylur/astal/archive/%{astal_commit}/%{name}-%{astal_shortcommit}.tar.gz
 Summary:    GTK4 component of Astal
 URL:        https://github.com/aylur/astal
@@ -43,9 +43,12 @@ Requires:       astal-libs%{?_isa}
 Summary:    GTK4 related files
 Group:      System/Libraries
 Provides:   %{libname} = %{EVRD}
+Provides: astal4
 
 %description -n %{libname}
 %summary
+
+
 
 %package -n %{devname}
 Summary:  Development files for %{name}
